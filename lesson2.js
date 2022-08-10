@@ -27,6 +27,13 @@ for (let i = 10; i <= 50; i++) {
     - Есть ли домашние животные(boolean)
 */
 
+me = {
+    firstName: 'Zarina',
+    lastName: 'Gayazova',
+    myAge: 27,
+    myPets: true,
+}
+
 /* 
     Задание 3:
 
@@ -58,6 +65,8 @@ for (let i = 10; i <= 50; i++) {
    итоговый текст должен быть собран из массива array и результат записать в переменную result
 */
 
+let result = []
+
 /* 
     Задание 4:
 
@@ -71,9 +80,23 @@ for (let i = 10; i <= 50; i++) {
     При вызове функции передайте ей, в качестве аргумента, свое имя и фамилию.
 */
 
+let showMessage = (firstName, lastName) => {
+    const fullName = `${firstName} ${lastName}`;
+    console.log(fullName);
+}
+showMessage('zarina', 'gayazova');
+
 /* 
     Задание 5:
 
     Вывести в консоль с помощью цикла WHILE все нечетные числа от 21 до 67
     
 */
+let i = 21
+while (i <= 67) {
+    
+    if (i % 2) {
+        console.log(i)
+    }
+    i++
+}
