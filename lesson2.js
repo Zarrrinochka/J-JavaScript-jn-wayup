@@ -4,7 +4,7 @@
     Вывести в консоль с помощью цикла FOR все четные числа от 10 до 50
 */
 
-console.log("2.1 Dсе четные числа от 10 до 50:")
+console.log("2.1 Все четные числа от 10 до 50:")
 
 for (let i = 10; i <= 50; i++) {
     if (i % 2 == 0) {
@@ -26,13 +26,14 @@ for (let i = 10; i <= 50; i++) {
     - Возраст(number)
     - Есть ли домашние животные(boolean)
 */
-
+console.log("2.2 Объект в котором описываешь сам себя:")
 me = {
     firstName: 'Zarina',
     lastName: 'Gayazova',
     myAge: 27,
     myPets: true,
-}
+};
+console.log(me);
 
 /* 
     Задание 3:
@@ -64,8 +65,42 @@ me = {
 
    итоговый текст должен быть собран из массива array и результат записать в переменную result
 */
+console.log("2.3 итоговый текст из массива array :")
 
-let result = []
+const array = [
+    'я в Симбирск,',
+    'в трактире.',
+    'с утра',
+    'В ту же ночь',
+    'Я остановился',
+    'для закупки', 
+    'что и было поручено Савельичу.',
+    'приехал,',
+    'где должен был',
+    'нужных вещей',
+    'отправился по лавкам',
+    'пробыть сутки',
+    'Савельич'
+]
+
+let result = [
+    array[3],
+    array[7],
+    array[0],
+    array[8],
+    array[11],
+    array[5],
+    array[9],
+    array[6],
+    array[4],
+    array[1],
+    array[12],
+    array[2],
+    array[10],
+]
+
+console.log(result)
+
 
 /* 
     Задание 4:
@@ -79,6 +114,7 @@ let result = []
 
     При вызове функции передайте ей, в качестве аргумента, свое имя и фамилию.
 */
+console.log("2.4 функция с параметрами передаёт имя: ")
 
 let showMessage = (firstName, lastName) => {
     const fullName = `${firstName} ${lastName}`;
@@ -94,7 +130,7 @@ showMessage('zarina', 'gayazova');
 */
 let i = 21
 while (i <= 67) {
-    
+
     if (i % 2) {
         console.log(i)
     }
