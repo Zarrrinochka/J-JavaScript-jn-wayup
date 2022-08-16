@@ -51,10 +51,9 @@ console.log("1.2 ответ: " + area);
 
 */
 
-time = 2;
-speedOfFirst = 95;
-speedOfSecond = 114;
-95 * 2 + 114 * 2
+let time = 2;
+let speedOfFirst;
+let speedOfSecond = 114;
 let distances = speedOfFirst * time + speedOfSecond * time;
 console.log("1.3 ответ: " + distances);
 
@@ -77,7 +76,7 @@ if (randomNumber < 20) {
     console.log("1.4 ответ: " + randomNumber + " меньше 20");
 } else if (randomNumber > 50) {
     console.log("1.4 ответ: " + randomNumber + " больше 50");
-} else if (20 < randomNumber > 50) {
+} else {
     console.log("1.4 ответ: " + randomNumber + " randomNumber больше 20, и меньше 50")
 };
 
